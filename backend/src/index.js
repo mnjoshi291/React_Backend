@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const app = require("./app");
 const config = require("./config/config")
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 mongoose
   .connect(config.mongoose.url, {
     useCreateIndex: config.mongoose.options.useCreateIndex,
